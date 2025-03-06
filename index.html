@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+    <script>
+  window.addEventListener('load', function() {
+    const pageLoadTime = Math.round(performance.timing.loadEventEnd - performance.timing.navigationStart);
+    gtag('event', 'page_view', {
+      'page_load_time': pageLoadTime
+    });
+  });
+</script>
+
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
